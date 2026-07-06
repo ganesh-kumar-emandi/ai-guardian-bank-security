@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# AI Guardian 🛡️
+**Real-Time Insider Threat & Fraud Detection Platform for Banks**
 
-# Run and deploy your AI Studio app
+## 📖 Overview
+AI Guardian is a cutting-edge, AI-powered banking security platform designed to detect insider threats, suspicious employee activities, data leakage, and fraudulent behavior using machine learning and behavioral analytics.
 
-This contains everything you need to run your app locally.
+## 🎯 Problem Statement
+Banks and financial institutions face massive financial and reputational losses due to:
+- **Insider Threats:** Malicious or negligent employees accessing or leaking sensitive customer data.
+- **Fraudulent Transactions:** Rapid fund transfers, money laundering, and unauthorized access.
+- **Delayed Detection:** Traditional security systems rely on static rules, missing complex behavioral anomalies until the damage is done.
 
-View your app in AI Studio: https://ai.studio/apps/97917a15-3c2a-412e-a62c-53ed5f0b605c
+## 💡 Our Solution
+AI Guardian provides a proactive, real-time command center for security officers. It continuously monitors employee activity, calculates dynamic risk scores, and uses Generative AI to explain anomalies and recommend immediate actions.
 
-## Run Locally
+## ✨ Key Features
+- **Real-Time Risk Scoring:** Dynamic 0-100 risk scoring based on behavioral patterns (location, time, data volume).
+- **GenAI Security Assistant:** Ask the AI in natural language about specific alerts, employee behaviors, or mitigation strategies.
+- **Data Leak Prevention (DLP):** Monitors for mass downloads, USB connections, and unusual database queries.
+- **Behavioral Analytics:** Detects anomalies like late-night logins, unknown device access, and irregular navigation patterns.
+- **Role-Based Dashboards:** Distinct views for Administrators (Security Command Center) and Employees (Profile & Status).
+- **Fraud Detection:** Flags patterns indicative of money laundering or rapid fund transfers.
 
-**Prerequisites:**  Node.js
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Tailwind CSS, React Router, Recharts, Lucide Icons, Vite
+* **Backend:** Node.js, Express.js
+* **AI Integration:** Google Gemini 3.5 Flash (via `@google/genai` SDK)
+* **Authentication:** JWT (JSON Web Tokens)
+* **Styling Theme:** "Bento Grid" Institutional Security design
 
+## 🚀 Installation & Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd ai-guardian
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_google_gemini_api_key
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 🔐 Demo Credentials
+- **Admin/Security Officer:** `admin@aiguardian.com` / `password123`
+- **Employee (Safe):** `emp101@bank.com` / `password123`
+- **Employee (High Risk):** `emp102@bank.com` / `password123`
+
+## 🔮 Future Roadmap
+- Integration with real SIEM (Security Information and Event Management) tools (e.g., Splunk).
+- Implementation of a dedicated Python/FastAPI AI engine with Isolation Forests for unsupervised anomaly detection.
+- Real-time WebSocket alerts for immediate incident response.
+- Advanced endpoint monitoring agents.
+
+---
+*Built with ❤️ for the Hackathon*
