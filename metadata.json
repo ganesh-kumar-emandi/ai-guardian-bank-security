@@ -1,0 +1,6 @@
+{
+  "name": "AI Guardian",
+  "description": "Real-Time Insider Threat & Fraud Detection Platform for Banks",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
